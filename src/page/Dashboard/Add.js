@@ -52,8 +52,8 @@ function Add({ students, setstudents, setIsAdding }) {
     return (
         <div className="small-container">
             <form onSubmit={handleAdd}>
-                <h1>Mark Attendance</h1>
-                <label htmlFor="fullName">First Name</label>
+                <h1>Enter Student Details</h1>
+                <label htmlFor="fullName">Name</label>
                 <input
                     id="fullName"
                     type="text"
@@ -78,7 +78,7 @@ function Add({ students, setstudents, setIsAdding }) {
                     value={checkIn}
                     onChange={e => setcheckIn(e.target.value)}
                 />
-                <label htmlFor="checkOut">checkOut ($)</label>
+                <label htmlFor="checkOut">checkOut</label>
                 <input
                     id="checkOut"
                     type="time"
@@ -95,7 +95,7 @@ function Add({ students, setstudents, setIsAdding }) {
                     onChange={e => setDate(e.target.value)}
                 />
                 <div style={{ marginTop: '30px' }}>
-                    <input type="submit" value="Mark" />
+                    <input type="submit" value="Add" />
                     <input
                         style={{ marginLeft: '12px' }}
                         className="muted-button"
